@@ -5,7 +5,7 @@ public class HelloWorld {
     private String msg;
 
     public void speak() {
-        System.out.println("Hello" + this.msg);
+        System.out.println("Hello: " + this.msg);
     }
 
     public String getMsg() {
