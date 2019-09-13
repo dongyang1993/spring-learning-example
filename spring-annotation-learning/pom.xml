@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-basic</artifactId>
+    <artifactId>spring-annotation-learning</artifactId>
 
     <dependencyManagement>
         <dependencies>
@@ -46,10 +46,16 @@
         </dependency>
 
         <dependency>
-            <groupId>org.spring</groupId>
-            <artifactId>spring-common</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
     </dependencies>
 
 </project>

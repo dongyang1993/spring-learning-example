@@ -15,9 +15,9 @@
     </properties>
 
     <modules>
-        <module>spring-annotation</module>
-        <module>spring-aop</module>
-        <module>spring-basic</module>
+        <module>spring-annotation-learning</module>
+        <module>spring-aop-learning</module>
+        <module>spring-basic-learning</module>
     </modules>
 
 
