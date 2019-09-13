@@ -1,5 +1,6 @@
-package org.spring.basic.main;
+package org.spring.basic;
 
+import org.spring.common.bean.HelloWorld;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AnnotaionMain {

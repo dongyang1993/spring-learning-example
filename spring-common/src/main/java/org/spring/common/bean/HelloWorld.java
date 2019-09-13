@@ -1,4 +1,4 @@
-package org.spring.basic.main;
+package org.spring.common.bean;
 
 public class HelloWorld {
 

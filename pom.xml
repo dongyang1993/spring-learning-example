@@ -15,7 +15,12 @@
     </properties>
 
     <modules>
-        <module>basic-main</module>
+        <module>spring-basic</module>
+        <module>spring-annotation</module>
+        <module>spring-common</module>
+        <module>spring-aop</module>
     </modules>
+
+
 
 </project>

@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="helloworld" class="org.spring.basic.main.HelloWorld">
+    <bean id="helloworld" class="org.spring.common.bean.HelloWorld">
         <property name="msg" value="World"/>
     </bean>
 </beans>
