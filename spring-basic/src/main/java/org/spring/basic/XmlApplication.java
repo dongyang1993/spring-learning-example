@@ -3,7 +3,7 @@ package org.spring.basic;
 import org.spring.common.bean.HelloWorld;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class XmlMain {
+public class XmlApplication {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");

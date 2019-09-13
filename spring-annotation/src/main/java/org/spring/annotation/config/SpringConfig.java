@@ -1,11 +1,11 @@
-package org.spring.annotation.autowired;
+package org.spring.annotation.config;
 
-import org.spring.common.bean.HelloWorld;
+import org.spring.annotation.bean.HelloWorld;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@ComponentScan(basePackages = {"org.spring.annotation.autowired"})
+@ComponentScan(basePackages = {"org.spring.annotation"})
 @Configuration
 public class SpringConfig {
 

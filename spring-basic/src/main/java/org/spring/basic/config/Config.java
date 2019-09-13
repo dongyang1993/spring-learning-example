@@ -1,4 +1,4 @@
-package org.spring.basic;
+package org.spring.basic.config;
 
 import org.spring.common.bean.HelloWorld;
 import org.springframework.context.annotation.Bean;

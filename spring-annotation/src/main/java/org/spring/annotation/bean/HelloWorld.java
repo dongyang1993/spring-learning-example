@@ -1,4 +1,4 @@
-package org.spring.common.bean;
+package org.spring.annotation.bean;
 
 public class HelloWorld {
 

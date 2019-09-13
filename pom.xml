@@ -15,10 +15,9 @@
     </properties>
 
     <modules>
-        <module>spring-basic</module>
         <module>spring-annotation</module>
-        <module>spring-common</module>
         <module>spring-aop</module>
+        <module>spring-basic</module>
     </modules>
 
 
