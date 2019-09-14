@@ -10,8 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = SpringConfig.class)
@@ -71,5 +77,22 @@ public class AnnotationTest {
     public void test5() {
         System.out.println(monday);
         System.out.println(environment.getProperty("mine.monday"));
+    }
+
+    @Test
+    public void test6() throws IOException {
+        ClassPathResource resource = new ClassPathResource("config.properties");
+        InputStream in = resource.getInputStream();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+        reader.lines().forEach(System.out::println);
+        reader.close();
+    }
+
+    @Test
+    public void test7() throws IOException {
+        InputStream in = this.getClass().getClassLoader().getResourceAsStream("config.properties");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+        reader.lines().forEach(System.out::println);
+        reader.close();
     }
 }
