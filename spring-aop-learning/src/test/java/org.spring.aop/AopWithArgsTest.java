@@ -11,12 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(classes = {Config.class})
 public class AopWithArgsTest {
 
-    @Autowired
-    @Qualifier("performanceImpl")
-    private Performance performance;
 
-    @Test
-    public void test1() {
-        performance.perform();
-    }
+
+
 }
