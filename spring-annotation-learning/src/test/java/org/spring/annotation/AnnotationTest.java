@@ -79,20 +79,4 @@ public class AnnotationTest {
         System.out.println(environment.getProperty("mine.monday"));
     }
 
-    @Test
-    public void test6() throws IOException {
-        ClassPathResource resource = new ClassPathResource("config.properties");
-        InputStream in = resource.getInputStream();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-        reader.lines().forEach(System.out::println);
-        reader.close();
-    }
-
-    @Test
-    public void test7() throws IOException {
-        InputStream in = this.getClass().getClassLoader().getResourceAsStream("config.properties");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-        reader.lines().forEach(System.out::println);
-        reader.close();
-    }
 }
