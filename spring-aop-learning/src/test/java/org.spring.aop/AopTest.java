@@ -40,4 +40,5 @@ public class AopTest {
     public void test3() {
         performanceImpl.perform();
     }
+
 }

@@ -8,14 +8,13 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {Config.class})
-public class AopWithArgsTest {
+public class AopAnnotationTest {
 
     @Autowired
     private Performance performance;
 
     @Test
-    public void test4() {
-        performance.performArgs(20);
+    public void test1() {
+        performance.performAnnotation();
     }
-
 }

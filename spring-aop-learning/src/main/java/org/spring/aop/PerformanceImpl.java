@@ -5,4 +5,9 @@ public class PerformanceImpl implements Performance {
     public void perform() {
         System.out.println("PerformanceImpl");
     }
+
+    @Override
+    public void performArgs(int name) {
+        System.out.println("PerformanceImplWithName:" + name);
+    }
 }
